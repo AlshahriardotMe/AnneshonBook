@@ -27,559 +27,360 @@
 
 	<!-- End Carousel -->
 
-	<div class="container-fluid">
+	<div class="container-fluid all-books mt-4">
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="header">
-					<h2 class="text-center my-4">Book Categories</h2>
+					<h2 class="text-center my-5">আমাদের বই সমূহ</h2>
 				</div>
 			</div>
 		</div>
-	</div>
-	 
-
-
-	<div class="container">
+	
 		<div class="row">
 			<div class="col-lg-12 col-md-6 col-sm-12">
-				<nav class="navbar ">
-					<div class="container-fluid ">
-						<div class="col-lg-6 col-md-6 col-sm-3 d-flex justify-content-around">
-							<div class="dropdown">
-								<button class="btn btn-outline-secondary 
-								 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-								  Dropdown
-								</button>
-								<ul class="dropdown-menu">
-								  <li><a class="dropdown-item" href="#">Action</a></li>
-								  <li><a class="dropdown-item" href="#">Another action</a></li>
-								  <li><a class="dropdown-item" href="#">Something else here</a></li>
-								</ul>
-							</div>
-							<div class="dropdown">
-								<button class="btn btn-outline-secondary 
-								 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-								  Dropdown
-								</button>
-								<ul class="dropdown-menu">
-								  <li><a class="dropdown-item" href="#">Action</a></li>
-								  <li><a class="dropdown-item" href="#">Another action</a></li>
-								  <li><a class="dropdown-item" href="#">Something else here</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-3 d-flex justify-content-around">
-							<div class="dropdown">
-								<button class="btn btn-outline-secondary 
-								 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-								  Dropdown
-								</button>
-								<ul class="dropdown-menu">
-								  <li><a class="dropdown-item" href="#">Action</a></li>
-								  <li><a class="dropdown-item" href="#">Another action</a></li>
-								  <li><a class="dropdown-item" href="#">Something else here</a></li>
-								</ul>
-							</div>
-						
-							<div class="dropdown">
-								<button class="btn btn-outline-secondary 
-								 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-								  Dropdown
-								</button>
-								<ul class="dropdown-menu">
-								  <li><a class="dropdown-item" href="#">Action</a></li>
-								  <li><a class="dropdown-item" href="#">Another action</a></li>
-								  <li><a class="dropdown-item" href="#">Something else here</a></li>
-								</ul>
-							</div>
-						</div>
-						
-				  
-						
-				  
-				  
-					  
+			   <div class="list d-flex justify-content-center gap-2">
+				  <div class="all">
+					
+					<a  href="{% url 'All_books' %}">
+					<button type="button" class="btn btn-outline-danger"> 
+						 সকল বই</button></a>
+				  </div>
+				  <div class="department">
+					<div class="dropdown">
+						<button class="btn btn-secondary dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+							ডিপার্টমেন্ট
+						</button>
+						<ul class="dropdown-menu">
+						  <li><a class="dropdown-item" href="{% url 'Cmt_all' %}">কম্পিউটার</a></li>
+						  <li><a class="dropdown-item" href="#">ইলেকট্রিক্যাল<a></li>
+						  <li><a class="dropdown-item" href="#">সিভিল</a></li>
+						  <li><a class="dropdown-item" href="#">মেকানিকাল</a></li>
+						  <li><a class="dropdown-item" href="#">ইলেকট্রনিক্স</a></li>
+						  <li><a class="dropdown-item" href="#">সিভিল</a></li>
+						  <li><a class="dropdown-item" href="#">সিভিল</a></li>
+						  <li><a class="dropdown-item" href="#">সিভিল</a></li>
+						  <li><a class="dropdown-item" href="#">সিভিল</a></li>
+						</ul>
+					  </div>
+				  </div>
+				  <div class="semester">
+					<div class="dropdown">
+						<button class="btn btn-secondary dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+							সেমিস্টার
+						</button>
+						<ul class="dropdown-menu">
+						  <li><a class="dropdown-item" href="{% url 'Cmt_First_semeter' %}">১ম পর্ব</a></li>
+	
+						  <li><a class="dropdown-item" href="{% url 'Cmt_Second_semeter' %}">২য় পর্ব</a></li>
+	
+						  <li><a class="dropdown-item" href="{% url 'Cmt_Third_semeter' %}">৩য় পর্ব</a></li>
+	
+						  <li><a class="dropdown-item" href="{% url 'Cmt_Fourth_semeter' %}">৪র্থ পর্ব</a></li>
+	
+						  <li><a class="dropdown-item" href="{% url 'Cmt_Fifth_semeter' %}">৫ম পর্ব</a></li>
+	
+						  <li><a class="dropdown-item" href="{% url 'Cmt_Sixth_semeter' %}">৬ষ্ঠ পর্ব</a></li>
+	
+						  <li><a class="dropdown-item" href="{% url 'Cmt_Seventh_semeter' %}">৭ম পর্ব</a></li>
+						  
+						</ul>
+					  </div>
+				  </div>
+			   </div>
+			</div>
+		</div>
+		 
+	
+	
+		<!-- all cart -->
+		<div class="row mt-4">
+			<div class="col-lg-3 col-md-4 col-sm-12 mt-3">
+				<div class="card shadow-lg m-auto" style="width: 17rem;">
+					<img src="{% static 'images/book/book-one.jpg' %}" class="card-img-top " alt=<i class="fa-sharp fa-solid fa-image-slash"></i>
+					<div class="card-body">
+					  <h5 class="card-title">book name </h5>
+					  <p class="card-text Sub-code">বিষয় কোড : 61234</p>
+					  <p class="writer-name">Touhid hossen</p>
+					  <p class="regulation">প্রবিধান : 2022</p>
+					  <a href="#" class="btn btn-primary">কার্ডে জমা করুন</a>
 					</div>
-				  </nav>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-12 mt-3">
+				<div class="card shadow-lg m-auto" style="width: 17rem;">
+					<img src="{% static 'images/book/book-two.jpg' %}" class="card-img-top " alt=<i class="fa-sharp fa-solid fa-image-slash"></i>
+					<div class="card-body">
+					  <h5 class="card-title">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-12 mt-3">
+				<div class="card shadow-lg m-auto" style="width: 17rem;">
+					<img src="{% static 'images/book/book-three.jpg' %}" class="card-img-top" alt=<i class="fa-sharp fa-solid fa-image-slash"></i>
+					<div class="card-body">
+					  <h5 class="card-title">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-12 mt-3">
+				<div class="card shadow-lg m-auto" style="width: 17rem;">
+					<img src="{% static 'images/book/book-fore.jpg' %}" class="card-img-top " alt=<i class="fa-sharp fa-solid fa-image-slash"></i>
+					<div class="card-body">
+					  <h5 class="card-title">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
 				</div>
 			</div>
 		</div>
+		<div class="row mt-4">
+			<div class="col-lg-3 col-md-4 col-sm-12 mt-3">
+				<div class="card shadow-lg m-auto" style="width: 17rem;">
+					<img src="{% static 'images/book/book-one.jpg' %}" class="card-img-top " alt=<i class="fa-sharp fa-solid fa-image-slash"></i>
+					<div class="card-body">
+					  <h5 class="card-title">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-12 mt-3">
+				<div class="card shadow-lg m-auto" style="width: 17rem;">
+					<img src="{% static 'images/book/book-two.jpg' %}" class="card-img-top " alt=<i class="fa-sharp fa-solid fa-image-slash"></i>
+					<div class="card-body">
+					  <h5 class="card-title">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-12 mt-3">
+				<div class="card shadow-lg m-auto" style="width: 17rem;">
+					<img src="{% static 'images/book/book-three.jpg' %}" class="card-img-top" alt=<i class="fa-sharp fa-solid fa-image-slash"></i>
+					<div class="card-body">
+					  <h5 class="card-title">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-12 mt-3">
+				<div class="card shadow-lg m-auto" style="width: 17rem;">
+					<img src="{% static 'images/book/book-fore.jpg' %}" class="card-img-top " alt=<i class="fa-sharp fa-solid fa-image-slash"></i>
+					<div class="card-body">
+					  <h5 class="card-title">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	
 	</div>
-
-	
-	<div class="container-fluid">
-        
-        <div class="row">
-          <div class="col-md-12">
-
-            <div class="bootstrap-tabs product-tabs">
-              <div class="tabs-header d-flex justify-content-between border-bottom my-5">
-                <h3>All Books</h3>
-                <nav>
-                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a href="#" class="nav-link text-uppercase fs-6 " id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" aria-selected="false" role="tab" tabindex="-1">All</a>
-                    <a href="#" class="nav-link text-uppercase fs-6" id="nav-fruits-tab" data-bs-toggle="tab" data-bs-target="#nav-fruits" aria-selected="false" role="tab" tabindex="-1">Fruits &amp; Veges</a>
-                    <a href="#" class="nav-link text-uppercase fs-6 " id="nav-juices-tab" data-bs-toggle="tab" data-bs-target="#nav-juices" aria-selected="true" role="tab">Juices</a>
-                  </div>
-                </nav>
-              </div>
-              <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
-
-                  <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
-                  
-                    <div class="col">
-                      <div class="product-item">
-                        <span class="badge bg-success position-absolute m-3">-30%</span>
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book-two.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                         
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="product-item">
-                        <span class="badge bg-success position-absolute m-3">-30%</span>
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book-three.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                          
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book-fore.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                         
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book-five.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                          
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book-six.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                          
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book-seven.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                          <div class="input-group product-qty">
-                              <span class="input-group-btn">
-                                  <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus">
-                                    <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                                  </button>
-                              </span>
-                              <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1">
-                              <span class="input-group-btn">
-                                  <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus">
-                                      <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                                  </button>
-                              </span>
-                          </div>
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book-night.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                          
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book-nine.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                        
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book-ten.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                         
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                       
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                  <!-- / product-grid -->
-                  
-                </div>
-
-                <div class="tab-pane fade" id="nav-fruits" role="tabpanel" aria-labelledby="nav-fruits-tab">
-                  
-                  <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
-
-                    <div class="col">
-                      <div class="product-item">
-                        <span class="badge bg-success position-absolute m-3">-30%</span>
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book-one.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                          
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="product-item">
-                        <span class="badge bg-success position-absolute m-3">-30%</span>
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book-two.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                          
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-                  
-                    <div class="col">
-                      <div class="product-item">
-                        <span class="badge bg-success position-absolute m-3">-30%</span>
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book-three.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                          
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book-fore.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                          
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book-five.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                        
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book-six.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                          
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                  <!-- / product-grid -->
-
-                </div>
-                <div class="tab-pane fade active show" id="nav-juices" role="tabpanel" aria-labelledby="nav-juices-tab">
-
-                  <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
-
-                    <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book-seven.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                         
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book-night.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                          
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-                  
-                    <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book-ten.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                          
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                          <div class="input-group product-qty">
-                             
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                          
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="single-product.html" title="Product Title">
-                            <img src="{% static 'images/book/book-one.jpg' %}" class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Sunstar Fresh Melon Juice</h3>
-                        <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">$18.00</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                          
-                          <a href="#" class="nav-link btn-outline-success rounded-1">Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon></a>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                  <!-- / product-grid -->
-                  
-                </div>
-                
-              </div>
-            </div>
-
-          </div>
-        </div>
-    </div>
-    
-
-   
-
-	
-
 
 
 <!-- Categories Section -->
 
+<!-- suggestion Section -->
+<div class="container-fluid suggestion-book">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="suggestion-text">
+				<h1 class="text-center mt-5">পরামর্শকৃত বই</h1>
+			</div>
+		</div>
+
+
+		<!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+
+					<!-- Products tab & slick -->
+					<div class="col-md-12">
+						<div class="row">
+							<div class="products-tabs">
+								<!-- tab -->
+								<div id="tab2" class="tab-pane fade in active">
+									<div class="products-slick" data-nav="#slick-nav-2">
+										<!-- product -->
+										<div class="product shadow">
+											<div class="product-img">
+												<img src="{% static 'images/book/book-fore.jpg' %}" alt=<i class="fa-sharp fa-solid fa-image-slash w-100"></i>
+												
+											</div>
+											
+											
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product shadow">
+											<div class="product-img">
+												<img src="{% static 'images/book/book-fore.jpg' %}" alt=<i class="fa-sharp fa-solid fa-image-slash w-100"></i>
+												
+											</div>
+											
+											
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product shadow">
+											<div class="product-img">
+												<img src="{% static 'images/book/book-fore.jpg' %}" alt=<i class="fa-sharp fa-solid fa-image-slash w-100"></i>
+											</div>
+											
+											
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product shadow">
+											<div class="product-img">
+												<img src="{% static 'images/book/book-fore.jpg' %}" alt=<i class="fa-sharp fa-solid fa-image-slash w-100"></i>
+											</div>
+											
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product shadow">
+											<div class="product-img">
+												<img src="{% static 'images/book/book-fore.jpg' %}" alt=<i class="fa-sharp fa-solid fa-image-slash w-100"></i>
+											</div>
+											
+
+										</div>
+										<!-- /product -->
+									</div>
+									<div id="slick-nav-2" class="products-slick-nav"></div>
+								</div>
+								<!-- /tab -->
+							</div>
+						</div>
+					</div>
+					<!-- /Products tab & slick -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+
+
+
+	</div>
+</div>
+
+<!-- suggestion Section -->
+<!-- review Section  -->
+
+<div class="container-fluid review-book">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12">
+			<div class="review-text">
+				<h1 class="text-center mt-5">মন্তব্য</h1>
+			</div>
+		</div>
+		<div class="col-lg-12 col-md-12 col-sm-12">
+			
+					<!-- SECTION -->
+					<div class="section">
+						<!-- container -->
+						<div class="container">
+							<!-- row -->
+							<div class="row">
+			
+								<!-- Products tab & slick -->
+								<div class="col-md-12">
+									<div class="row">
+										<div class="products-tabs">
+											<!-- tab -->
+											<div id="tab2" class="tab-pane fade in active">
+												<div class="products-slick" data-nav="#slick-nav-2">
+													<!-- product -->
+													<div class="product shadow">
+														<div class="product-img">
+															<img src="{% static 'images/book/book-fore.jpg' %}" alt=<i class="fa-sharp fa-solid fa-image-slash w-100"></i>
+															
+														</div>
+														
+														
+													</div>
+													<!-- /product -->
+			
+													<!-- product -->
+													<div class="product shadow">
+														<div class="product-img">
+															<img src="{% static 'images/book/book-fore.jpg' %}" alt=<i class="fa-sharp fa-solid fa-image-slash w-100"></i>
+															
+														</div>
+														
+														
+													</div>
+													<!-- /product -->
+			
+													<!-- product -->
+													<div class="product shadow">
+														<div class="product-img">
+															<img src="{% static 'images/book/book-fore.jpg' %}" alt=<i class="fa-sharp fa-solid fa-image-slash w-100"></i>
+														</div>
+														
+														
+													</div>
+													<!-- /product -->
+			
+													<!-- product -->
+													<div class="product shadow">
+														<div class="product-img">
+															<img src="{% static 'images/book/book-fore.jpg' %}" alt=<i class="fa-sharp fa-solid fa-image-slash w-100"></i>
+														</div>
+														
+													</div>
+													<!-- /product -->
+			
+													<!-- product -->
+													<div class="product shadow">
+														<div class="product-img">
+															<img src="{% static 'images/book/book-fore.jpg' %}" alt=<i class="fa-sharp fa-solid fa-image-slash w-100"></i>
+														</div>
+														
+			
+													</div>
+													<!-- /product -->
+												</div>
+												<div id="slick-nav-2" class="products-slick-nav"></div>
+											</div>
+											<!-- /tab -->
+										</div>
+									</div>
+								</div>
+								<!-- /Products tab & slick -->
+							</div>
+							<!-- /row -->
+						</div>
+						<!-- /container -->
+					</div>
+					<!-- /SECTION -->
+			
+			
+			
+			
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- review Section  -->
 
 
 

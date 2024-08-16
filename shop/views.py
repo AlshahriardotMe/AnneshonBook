@@ -4,28 +4,41 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'shop/home.html')
 
+def All_books(request):
+    return render(request, 'shop/all-books.html')
+
+# ----------------------login -------------------->
+def Login(request):
+    return render(request, 'shop/login.html')
+
+# ----------------------Registration -------------------->
+def Registration(request):
+    return render(request, 'shop/registration.html')
 
 #-------------------------COMPUTER OF semesterS ---->
+def Cmt_all(request):
+    return render(request, 'cmt/cmt-all.html')
+
 def Cmt_First_semeter(request):
-    return render(request, 'shop/home.html')
+    return render(request, 'cmt/semester-one.html')
 
 def Cmt_Second_semeter(request):
-    return render(request, 'shop/home.html')
+    return render(request, 'cmt/semester-two.html')
 
 def Cmt_Third_semeter(request):
-    return render(request, 'shop/home.html')
+    return render(request, 'cmt/semester-three.html')
 
 def Cmt_Fourth_semeter(request):
-    return render(request, 'shop/home.html')
+    return render(request, 'cmt/semester-fore.html')
 
 def Cmt_Fifth_semeter(request):
-    return render(request, 'shop/home.html')
+    return render(request, 'cmt/semester-five.html')
 
 def Cmt_Sixth_semeter(request):
-    return render(request, 'shop/home.html')
+    return render(request, 'cmt/semester-six.html')
 
 def Cmt_Seventh_semeter(request):
-    return render(request, 'shop/home.html')
+    return render(request, 'cmt/semester-seven.html')
 
 
 #-------------------------ET OF semesterS ---->
