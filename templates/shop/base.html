@@ -19,7 +19,7 @@
     <title>{% block title %} অন্বেষণ | বই {% endblock title %}</title>
 
     <!------------------------ link  ----------------->
-      
+	<link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap" rel="stylesheet">
     
     
     <!-- Our project just needs Font Awesome Free's Solid and Brand files -->
@@ -33,6 +33,8 @@
     
     <!------------------------ css  ----------------->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!------------------------ css  ----------------->
+    <link rel="stylesheet" href="{% static 'css/product_details.css' %}">
 
     <!------------------------ css/slick.css  ----------------->
     <link rel="stylesheet" href="{% static 'css/slick.css' %}">
@@ -40,6 +42,11 @@
     <link rel="stylesheet" href="{% static 'css/slick-theme.css' %}">
     <!------------------------ css/nouislider.min.css  ----------------->
     <link rel="stylesheet" href="{% static 'css/nouislider.min.css' %}">
+
+    <!------------------------ css/product.css  ----------------->
+    <link rel="stylesheet" href="{% static 'css/product.css' %}">
+    <!------------------------ css/contacts.css  ----------------->
+    <link rel="stylesheet" href="{% static 'css/contacts.css' %}">
     
 
 
@@ -124,7 +131,10 @@
 									<a href="#">
 										<i class="fa-solid fa-heart fs-4"></i>
 										<div class="qty">2</div>
-										<span>Wishlist</span>
+										<div class="wishlist mt-1">
+											<span>Wishlist</span>
+										</div>
+										
 									</a>
 									
 								</div>
@@ -141,11 +151,12 @@
 
 										</div>
 										<ul class="dropdown-menu p-2">
-											<li>	
-											   <a class="dropdown-item" href="#">
+										
+											<li class="cart-body">	
+											   
 													<div class="product-widget">
 														<div class="product-img">
-															<img src="./img/product02.png" alt="">
+															<img src="{% static 'images/book/book-five.jpg' %}" alt="">
 														</div>
 														<div class="product-body">
 															<h3 class="product-name"><a href="#">product name goes here</a></h3>
@@ -153,63 +164,17 @@
 														</div>
 														<button class="delete"><i class="fa fa-close"></i></button>
 													</div>
-												</a>
+												
 											</li>
-											<li>	
-											   <a class="dropdown-item" href="#">
-													<div class="product-widget">
-														<div class="product-img">
-															<img src="./img/product02.png" alt="">
-														</div>
-														<div class="product-body">
-															<h3 class="product-name"><a href="#">product name goes here</a></h3>
-															<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
-														</div>
-														<button class="delete"><i class="fa fa-close"></i></button>
-													</div>
-												</a>
-											</li>
-											<li>	
-											   <a class="dropdown-item" href="#">
-													<div class="product-widget">
-														<div class="product-img">
-															<img src="./img/product02.png" alt="">
-														</div>
-														<div class="product-body">
-															<h3 class="product-name"><a href="#">product name goes here</a></h3>
-															<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
-														</div>
-														<button class="delete"><i class="fa fa-close"></i></button>
-													</div>
-												</a>
-											</li>
-											<li>	
-											   <a class="dropdown-item" href="#">
-													<div class="product-widget">
-														<div class="product-img">
-															<img src="./img/product02.png" alt="">
-														</div>
-														<div class="product-body">
-															<h3 class="product-name"><a href="#">product name goes here</a></h3>
-															<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
-														</div>
-														<button class="delete"><i class="fa fa-close"></i></button>
-													</div>
-												</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">
-													<div class="cart-btns">
-														
-														<a class="btn-danger p-1" href="#">View Cart</a>
-														<a class="btn-danger p-1
-														" href="#">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
-													</div>
-												</a>
+											<li class="cart-btns mt-4">
+												<div class="dropdown-item  d-flex justify-content-center p-2">
+													
+													<a class="cart-btn" href="#">Checkout  
+													</a>
+													
+												</div>
 										    </li>
-											<li><a class="dropdown-item" href="#">Another action</a></li>
-											<li><a class="dropdown-item" href="#">Something else here</a></li>
-											<li><hr class="dropdown-divider"></li>
+											
 											
 										</ul>
 									</div>
@@ -245,9 +210,40 @@
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-expand-lg">
 						<li class="active"><a href="{% url 'home' %}">হোম</a></li>
-						<li><a href="#">ফ্রী বই</a></li>
-						<li><a href="#">কন্টাক্ট</a></li>
-						<li><a href="#">বই তালিকা</a></li>
+						<li><a href="{% url 'Free_book' %}">ফ্রী বই</a></li>
+						<li><a href="{% url 'Contact' %}">কন্টাক্ট</a></li>
+						<li><div class="dropdown">
+							<div class=" dropdown"  data-bs-toggle="dropdown" aria-expanded="false">
+								<a class="list" href="#">
+									বই তালিকা
+								</a>
+							</div>
+							
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="{% url 'Book_List_cmt' %}">কম্পিউটার<a></li>
+								<li><a class="dropdown-item" href="{% url 'Book_List_et' %}">ইলেকট্রিক্যাল<a></li>
+								<li><a class="dropdown-item" href="{% url 'Book_List_ct' %}">সিভিল</a></li>
+								<li><a class="dropdown-item" href="{% url 'Book_List_mac' %}">মেকানিকাল</a></li>
+								<li><a class="dropdown-item" href="{% url 'Book_List_ent' %}">ইলেকট্রনিক্স</a></li>
+								<li><a class="dropdown-item" href="{% url 'Book_List_ft' %}">ফুড</a></li>
+							</ul>
+						</div></li>
+						<!-- <li><div class="dropdown">
+							<div class=" dropdown"  data-bs-toggle="dropdown" aria-expanded="false">
+								<a href="#">
+									সিলেবাস
+								</a>
+							</div>
+							
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="{% url 'Book_List_cmt' %}">কম্পিউটার<a></li>
+								<li><a class="dropdown-item" href="{% url 'Book_List_et' %}">ইলেকট্রিক্যাল<a></li>
+								<li><a class="dropdown-item" href="{% url 'Book_List_ct' %}">সিভিল</a></li>
+								<li><a class="dropdown-item" href="{% url 'Book_List_mac' %}">মেকানিকাল</a></li>
+								<li><a class="dropdown-item" href="{% url 'Book_List_ent' %}">ইলেকট্রনিক্স</a></li>
+								<li><a class="dropdown-item" href="{% url 'Book_List_ft' %}">ফুড</a></li>
+							</ul>
+						</div></li> -->
 						<li><a href="#">প্রবিধান</a></li>
 						
 					</ul>
@@ -276,11 +272,52 @@
    <!-------------------------- extends End -------------------->
 
    <!-- Footer -->
-   <footer class="footer text-center">
-        <div class="container">
-            <p class="footer">&copy; 2024 BookShop. All rights reserved.</p>
-        </div>
-   </footer>
+   <footer class="container-fluid py-5">
+	<div class="row">
+	  <div class="col-12 col-md">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+		<small class="d-block mb-3 text-muted">&copy; 2017–2021</small>
+	  </div>
+	  <div class="col-lg-3 col-md-6 col-sm-3">
+		<h5>Features</h5>
+		<ul class="list-unstyled text-small">
+		  <li><a class="link-secondary" href="#">Cool stuff</a></li>
+		  <li><a class="link-secondary" href="#">Random feature</a></li>
+		  <li><a class="link-secondary" href="#">Team feature</a></li>
+		  <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+		  <li><a class="link-secondary" href="#">Another one</a></li>
+		  <li><a class="link-secondary" href="#">Last time</a></li>
+		</ul>
+	  </div>
+	  <div class="col-lg-3 col-md-6 col-sm-3">
+		<h5>Resources</h5>
+		<ul class="list-unstyled text-small">
+		  <li><a class="link-secondary" href="#">Resource name</a></li>
+		  <li><a class="link-secondary" href="#">Resource</a></li>
+		  <li><a class="link-secondary" href="#">Another resource</a></li>
+		  <li><a class="link-secondary" href="#">Final resource</a></li>
+		</ul>
+	  </div>
+	  <div class="col-lg-3 col-md-6 col-sm-3">
+		<h5>Resources</h5>
+		<ul class="list-unstyled text-small">
+		  <li><a class="link-secondary" href="#">Business</a></li>
+		  <li><a class="link-secondary" href="#">Education</a></li>
+		  <li><a class="link-secondary" href="#">Government</a></li>
+		  <li><a class="link-secondary" href="#">Gaming</a></li>
+		</ul>
+	  </div>
+	  <div class="col-lg-3 col-md-6 col-sm-3">
+		<h5>About</h5>
+		<ul class="list-unstyled text-small">
+		  <li><a class="link-secondary" href="#">Team</a></li>
+		  <li><a class="link-secondary" href="#">Locations</a></li>
+		  <li><a class="link-secondary" href="#">Privacy</a></li>
+		  <li><a class="link-secondary" href="#">Terms</a></li>
+		</ul>
+	  </div>
+	</div>
+  </footer>
    
    <!-- link  -->
 

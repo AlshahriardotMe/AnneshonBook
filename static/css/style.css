@@ -3,6 +3,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #333;
+  font-family: "Tiro Bangla", serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -123,6 +124,7 @@ textarea.input {
 .input-number .qty-up:hover, .input-number .qty-down:hover {
   background-color: #E4E7ED;
   color: #fa2802;;
+  transition: all .7s ease;
 }
 
 /*-- Select input --*/
@@ -287,10 +289,12 @@ textarea.input {
 
 .section-tab-nav li.active a {
   color: #fa2802;;
+  transition: all .7s ease;
 }
 
 .section-tab-nav li a:hover:after, .section-tab-nav li a:focus:after, .section-tab-nav li.active a:after {
   width: 100%;
+  transition: all .7s ease;
 }
 
 .section-title .section-nav .products-slick-nav {
@@ -344,7 +348,8 @@ textarea.input {
 }
 
 #breadcrumb .breadcrumb-tree li a:hover {
-  color: #fa2802;;
+  color: #fa2802;
+  transition: all .7s ease;
 }
 
 /*=========================================================
@@ -377,6 +382,7 @@ textarea.input {
 
 .header-links li a:hover {
   color: #fa2802;;
+  transition: all .7s ease;
 }
 
 .header-links li i {
@@ -411,6 +417,10 @@ textarea.input {
 .suggestion-book {
 	background-color: #d0f6ee;
 }
+.dropdown-menu.p-2.show {
+	width: 229px;
+}
+
 
 
 /*----------------------------*\
@@ -481,7 +491,7 @@ textarea.input {
 }
 
 .header-ctn>div>a>span {
-  font-size: 12px;
+  font-size: 14px;
   text-decoration: none;
 }
 
@@ -533,10 +543,11 @@ textarea.input {
   color: #fa2802;;
   background-color: transparent;
   text-decoration: none;
+  transition: all .7s ease;
 }
 
 .main-nav>li>a:after {
-  content: "";
+  
   display: block;
   width: 0%;
   height: 2px;
@@ -546,9 +557,57 @@ textarea.input {
   text-decoration: none;
 }
 
+.dropdown>a:hover{
+  color: #fa2802;;
+  background-color: transparent;
+  text-decoration: none;
+  transition: all .7s ease;
+}
+.dropdown>a:after{
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #fa2802;;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  text-decoration: none;
+}
+.dropdown-item{
+  background-color: #0a1142;
+  color: whitesmoke;
+}
+.dropdown-item:hover{
+  background-color: #fa2802;
+  color: #000;
+  transition: all .7s ease;
+}
+.product-widget {
+	background-color: #0a1142;
+	height: 89px;
+}
+.writer-name {
+	margin-bottom: 0px;
+	margin-top: -14px;
+}
+.product-widget .product-body .product-name > a {
+	font-weight: 700;
+	color: white;
+}
+.product-widget .product-img {
+	position: absolute;
+	left: 0px;
+	top: 6px;
+	width: 50px;
+	margin-left: 9px;
+}
+.cart-btns{
+  background-color: #0a1142;
+}
+
 .main-nav>li>a:hover:after, .main-nav>li>a:focus:after, .main-nav>li.active>a:after {
   width: 100%;
   text-decoration: none;
+  transition: all .7s ease;
 }
 
 .header-ctn li.nav-toggle {
@@ -558,12 +617,13 @@ textarea.input {
 	background-color: aliceblue;
 	height: 1300px
 }
+
 .review-book {
 	background-color: rgb(233, 255, 185);
+	height: 576px;
 }
-.review-book {
-	background-color: rgb(233, 255, 185);
-	height: 410px;
+.review-star {
+	color: orange;
 }
 .login-btn {
 	color: white;
@@ -573,6 +633,16 @@ textarea.input {
 .login-btn:hover{
   color: rgb(0, 0, 0);
 	background-color: #fa2802;
+  transition: all .7s ease;
+}
+.cart-btn{
+  background-color:#0a1142 ;
+  color: white
+}
+.cart-btn:hover{
+  color: #000;
+  background-color: #fa2802;
+  transition: all .7s ease;
 }
 
 /* .gradient-custom-3 {
@@ -598,7 +668,17 @@ textarea.input {
   .vh-100 {
     height: 279vh !important;
   } */
+  .free-book {
+    background-color: aliceblue;
+  }
 
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
 
 /*----------------------------*\
 	responsive nav
@@ -646,11 +726,11 @@ textarea.input {
     padding: 15px;
     color: #FFF;
   }
+  .list {
+    color: white;
+    margin-left: 14px;
+  }
 }
-
-/*=========================================================
-	04 -> CATEGORY SHOP
-===========================================================*/
 
 
 
@@ -666,20 +746,14 @@ textarea.input {
   margin: 30px 0px;
 }
 
-.product-widget .product-img {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 60px;
-}
 
 .product-widget .product-img>img {
   width: 100%;
 }
 
 .product-widget .product-body {
-  padding-left: 75px;
-  min-height: 60px;
+	padding-left: 85px;
+	min-height: 60px;
 }
 
 .product-widget .product-body .product-category {
@@ -782,9 +856,6 @@ textarea.input {
   font-size: 14px;
 }
 
-/*=========================================================
-	07 -> PRODUCTS PAGE
-===========================================================*/
 
 /*----------------------------*\
 	Aside
@@ -963,9 +1034,6 @@ textarea.input {
   font-size: 12px;
 }
 
-/*=========================================================
-	08 -> PRODUCT DETAILS PAGE
-===========================================================*/
 
 /*----------------------------*\
 	Product view
@@ -1065,6 +1133,12 @@ textarea.input {
 
 .product-details .review-link {
   font-size: 12px;
+}
+.card{
+  transition: calc(02);
+}
+.card:hover{
+  transition: transform(02);
 }
 
 .product-details .product-price {
@@ -1533,6 +1607,7 @@ textarea.input {
 
 .footer-links li a:hover {
   color: #fa2802;
+  transition: all .7s ease;
 }
 
 .copyright {
@@ -1574,6 +1649,7 @@ textarea.input {
 .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
   background-color: #fa2802;
   border-color: #fa2802;
+  transition: all .7s ease;
 }
 
 .slick-prev:before, .slick-next:before {
@@ -1676,6 +1752,16 @@ textarea.input {
     background-color: aliceblue;
     height: 1323px;
   }
+  .list {
+    color: white;
+    margin-left: 14px;
+  }
+  .review-book {
+    height: 715px;
+  }
+  .suggestion-book {
+    margin-top: 2954px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1703,6 +1789,18 @@ textarea.input {
   .all-books {
     background-color: aliceblue;
     height: 1323px;
+  }
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+  .list {
+    color: white;
+  }
+  .review-book {
+    height: 675px;
+  }
+  .suggestion-book {
+    margin-top: 2954px;
   }
 
 }
@@ -1742,6 +1840,10 @@ textarea.input {
   }
   .review-book {
     height: 410px;
+  }
+  .list {
+    color: white;
+    margin-left: 14px;
   }
 
 

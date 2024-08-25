@@ -4,8 +4,21 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'shop/home.html')
 
+# ,,,,,,,Free book ,,,,,,,,,,,,,,,,,
+def Free_book(request):
+    return render(request, 'shop/free-book.html')
+# ,,,,,,,Free book ,,,,,,,,,,,,,,,,,
+def Contact(request):
+    return render(request, 'shop/contact.html')
+
+
 def All_books(request):
     return render(request, 'shop/all-books.html')
+
+# ----------- product Details --------
+def Product_details(request):
+    return render(request, 'shop/product_details.html')
+
 
 # ----------------------login -------------------->
 def Login(request):

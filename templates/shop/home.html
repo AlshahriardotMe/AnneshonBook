@@ -94,13 +94,13 @@
 		<div class="row mt-4">
 			<div class="col-lg-3 col-md-4 col-sm-12 mt-3">
 				<div class="card shadow-lg m-auto" style="width: 17rem;">
-					<img src="{% static 'images/book/book-one.jpg' %}" class="card-img-top " alt=<i class="fa-sharp fa-solid fa-image-slash"></i>
+					<a href="{% url 'Product_details' %}"> <img  src="{% static 'images/book/book-one.jpg' %}" class="card-img-top " alt=<i class="fa-sharp fa-solid fa-image-slash"></i></a>
 					<div class="card-body">
-					  <h5 class="card-title">book name </h5>
+					  <h5  class="card-title">Bangla-I </h5>
 					  <p class="card-text Sub-code">বিষয় কোড : 61234</p>
 					  <p class="writer-name">Touhid hossen</p>
 					  <p class="regulation">প্রবিধান : 2022</p>
-					  <a href="#" class="btn btn-primary">কার্ডে জমা করুন</a>
+					  <a href="#" class="btn cart-btn">কার্ডে জমা করুন</a>
 					</div>
 				</div>
 			</div>
@@ -110,7 +110,7 @@
 					<div class="card-body">
 					  <h5 class="card-title">Card title</h5>
 					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					  <a href="#" class="btn btn-primary">Go somewhere</a>
+					  <a href="#" class="btn cart-btn">কার্ডে জমা করুন</a>
 					</div>
 				</div>
 			</div>
@@ -120,7 +120,7 @@
 					<div class="card-body">
 					  <h5 class="card-title">Card title</h5>
 					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					  <a href="#" class="btn btn-primary">Go somewhere</a>
+					  <a href="#" class="btn cart-btn">কার্ডে জমা করুন</a>
 					</div>
 				</div>
 			</div>
@@ -130,7 +130,7 @@
 					<div class="card-body">
 					  <h5 class="card-title">Card title</h5>
 					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					  <a href="#" class="btn btn-primary">Go somewhere</a>
+					  <a href="#" class="btn cart-btn">কার্ডে জমা করুন</a>
 					</div>
 				</div>
 			</div>
@@ -142,7 +142,7 @@
 					<div class="card-body">
 					  <h5 class="card-title">Card title</h5>
 					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					  <a href="#" class="btn btn-primary">Go somewhere</a>
+					  <a href="#" class="btn cart-btn">কার্ডে জমা করুন</a>
 					</div>
 				</div>
 			</div>
@@ -152,7 +152,7 @@
 					<div class="card-body">
 					  <h5 class="card-title">Card title</h5>
 					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					  <a href="#" class="btn btn-primary">Go somewhere</a>
+					  <a href="#" class="btn cart-btn">কার্ডে জমা করুন</a>
 					</div>
 				</div>
 			</div>
@@ -162,7 +162,7 @@
 					<div class="card-body">
 					  <h5 class="card-title">Card title</h5>
 					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					  <a href="#" class="btn btn-primary">Go somewhere</a>
+					  <a href="#" class="btn cart-btn">কার্ডে জমা করুন</a>
 					</div>
 				</div>
 			</div>
@@ -172,7 +172,7 @@
 					<div class="card-body">
 					  <h5 class="card-title">Card title</h5>
 					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					  <a href="#" class="btn btn-primary">Go somewhere</a>
+					  <a href="#" class="btn cart-btn">কার্ডে জমা করুন</a>
 					</div>
 				</div>
 			</div>
@@ -307,10 +307,19 @@
 													<!-- product -->
 													<div class="product shadow">
 														<div class="product-img">
-															<img src="{% static 'images/book/book-fore.jpg' %}" alt=<i class="fa-sharp fa-solid fa-image-slash w-100"></i>
+															<img src="{% static 'images/student.png' %}" alt=<i class="fa-sharp fa-solid fa-image-slash w-100"></i>
 															
 														</div>
-														
+														<div class="card-body bg-white">
+															<h5 class="card-title">Card title</h5>
+															<p class="card-text">Some quick example text to build on the card .</p>
+														   <div class="review-star">
+																<i class="fa-solid fa-star"></i>
+																<i class="fa-solid fa-star"></i>
+																<i class="fa-solid fa-star"></i>
+																<i class="fa-solid fa-star"></i>
+														   </div>
+														</div>
 														
 													</div>
 													<!-- /product -->
@@ -318,28 +327,18 @@
 													<!-- product -->
 													<div class="product shadow">
 														<div class="product-img">
-															<img src="{% static 'images/book/book-fore.jpg' %}" alt=<i class="fa-sharp fa-solid fa-image-slash w-100"></i>
+															<img src="{% static 'images/student.png' %}" alt=<i class="fa-sharp fa-solid fa-image-slash w-100"></i>
 															
 														</div>
-														
-														
-													</div>
-													<!-- /product -->
-			
-													<!-- product -->
-													<div class="product shadow">
-														<div class="product-img">
-															<img src="{% static 'images/book/book-fore.jpg' %}" alt=<i class="fa-sharp fa-solid fa-image-slash w-100"></i>
-														</div>
-														
-														
-													</div>
-													<!-- /product -->
-			
-													<!-- product -->
-													<div class="product shadow">
-														<div class="product-img">
-															<img src="{% static 'images/book/book-fore.jpg' %}" alt=<i class="fa-sharp fa-solid fa-image-slash w-100"></i>
+														<div class="card-body bg-white">
+															<h5 class="card-title">Card title</h5>
+															<p class="card-text">Some quick example text to build on the card .</p>
+														   <div class="review-star">
+																<i class="fa-solid fa-star"></i>
+																<i class="fa-solid fa-star"></i>
+																<i class="fa-solid fa-star"></i>
+																<i class="fa-solid fa-star"></i>
+														   </div>
 														</div>
 														
 													</div>
@@ -348,9 +347,55 @@
 													<!-- product -->
 													<div class="product shadow">
 														<div class="product-img">
-															<img src="{% static 'images/book/book-fore.jpg' %}" alt=<i class="fa-sharp fa-solid fa-image-slash w-100"></i>
+															<img src="{% static 'images/student.png' %}" alt=<i class="fa-sharp fa-solid fa-image-slash w-100"></i>
+														</div>
+														<div class="card-body bg-white">
+															<h5 class="card-title">Card title</h5>
+															<p class="card-text">Some quick example text to build on the card .</p>
+														   <div class="review-star">
+																<i class="fa-solid fa-star"></i>
+																<i class="fa-solid fa-star"></i>
+																<i class="fa-solid fa-star"></i>
+																<i class="fa-solid fa-star"></i>
+														   </div>
 														</div>
 														
+													</div>
+													<!-- /product -->
+			
+													<!-- product -->
+													<div class="product shadow">
+														<div class="product-img">
+															<img src="{% static 'images/student.png' %}" alt=<i class="fa-sharp fa-solid fa-image-slash w-100"></i>
+														</div>
+														<div class="card-body bg-white">
+															<h5 class="card-title">Card title</h5>
+															<p class="card-text">Some quick example text to build on the card .</p>
+														   <div class="review-star">
+																<i class="fa-solid fa-star"></i>
+																<i class="fa-solid fa-star"></i>
+																<i class="fa-solid fa-star"></i>
+																<i class="fa-solid fa-star"></i>
+														   </div>
+														</div>
+													</div>
+													<!-- /product -->
+			
+													<!-- product -->
+													<div class="product shadow">
+														<div class="product-img">
+															<img src="{% static 'images/student.png' %}" alt=<i class="fa-sharp fa-solid fa-image-slash w-100"></i>
+														</div>
+														<div class="card-body bg-white">
+															<h5 class="card-title">Card title</h5>
+															<p class="card-text">Some quick example text to build on the card .</p>
+														   <div class="review-star">
+																<i class="fa-solid fa-star"></i>
+																<i class="fa-solid fa-star"></i>
+																<i class="fa-solid fa-star"></i>
+																<i class="fa-solid fa-star"></i>
+														   </div>
+														</div>
 			
 													</div>
 													<!-- /product -->
