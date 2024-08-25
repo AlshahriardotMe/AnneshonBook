@@ -116,8 +116,7 @@
         text-transform: UPPERCASE;
         font-weight: bold;
         color: #fff;
-        -webkit-transition: background .3s ease;
-        transition: background .3s ease;
+        transition: all .7s ease;
     }
     .add-to-cart:hover, .like:hover {
       background: #fa2802;
