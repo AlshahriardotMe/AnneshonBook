@@ -20,6 +20,12 @@ def Product_details(request):
     return render(request, 'shop/product_details.html')
 
 
+# ----------------------profile -------------------->
+
+def Profile(request):
+    return render(request, 'shop/profile.html')
+
+
 # ----------------------login -------------------->
 def Login(request):
     return render(request, 'shop/login.html')
