@@ -11,6 +11,10 @@ def Free_book(request):
 def Contact(request):
     return render(request, 'shop/contact.html')
 
+# ------------------Add to Carts --------------------------------
+
+def AddToCart(request):
+    return render(request, 'shop/add-to-cart.html')
 
 def All_books(request):
     return render(request, 'shop/all-books.html')

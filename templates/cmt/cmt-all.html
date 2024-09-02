@@ -17,51 +17,66 @@
     <div class="row">
         <div class="col-lg-12 col-md-6 col-sm-12">
            <div class="list d-flex justify-content-center gap-2">
-              <div class="all">
-                <button type="button" class="btn btn-outline-danger">সকল বই</button>
-              </div>
-              <div class="department">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        ডিপার্টমেন্ট
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="{% url 'Cmt_all' %}">কম্পিউটার</a></li>
-                      <li><a class="dropdown-item" href="#">ইলেকট্রিক্যাল<a></li>
-                      <li><a class="dropdown-item" href="#">সিভিল</a></li>
-                      <li><a class="dropdown-item" href="#">মেকানিকাল</a></li>
-                      <li><a class="dropdown-item" href="#">ইলেকট্রনিক্স</a></li>
-                      <li><a class="dropdown-item" href="#">সিভিল</a></li>
-                      <li><a class="dropdown-item" href="#">সিভিল</a></li>
-                      <li><a class="dropdown-item" href="#">সিভিল</a></li>
-                      <li><a class="dropdown-item" href="#">সিভিল</a></li>
-                    </ul>
-                  </div>
-              </div>
-              <div class="semester">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        সেমিস্টার
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="{% url 'Cmt_First_semeter' %}">১ম পর্ব</a></li>
+              
+                <div class="department">
+                    <div class="dropdown">
+                        <button class="btn cart-btn dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ডিপার্টমেন্ট
+                        </button>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{% url 'Cmt_all' %}">কম্পিউটার</a></li>
+                        <li><a class="dropdown-item" href="#">ইলেকট্রিক্যাল<a></li>
+                        <li><a class="dropdown-item" href="#">সিভিল</a></li>
+                        <li><a class="dropdown-item" href="#">মেকানিকাল</a></li>
+                        <li><a class="dropdown-item" href="#">ইলেকট্রনিক্স</a></li>
+                        <li><a class="dropdown-item" href="#">সিভিল</a></li>
+                        <li><a class="dropdown-item" href="#">সিভিল</a></li>
+                        <li><a class="dropdown-item" href="#">সিভিল</a></li>
+                        <li><a class="dropdown-item" href="#">সিভিল</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="semester">
+                    <div class="dropdown">
+                        <button class="btn cart-btn dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            সেমিস্টার
+                        </button>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{% url 'Cmt_First_semeter' %}">১ম পর্ব</a></li>
 
-                      <li><a class="dropdown-item" href="{% url 'Cmt_Second_semeter' %}">২য় পর্ব</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Cmt_Second_semeter' %}">২য় পর্ব</a></li>
 
-                      <li><a class="dropdown-item" href="{% url 'Cmt_Third_semeter' %}">৩য় পর্ব</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Cmt_Third_semeter' %}">৩য় পর্ব</a></li>
 
-                      <li><a class="dropdown-item" href="{% url 'Cmt_Fourth_semeter' %}">৪র্থ পর্ব</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Cmt_Fourth_semeter' %}">৪র্থ পর্ব</a></li>
 
-                      <li><a class="dropdown-item" href="{% url 'Cmt_Fifth_semeter' %}">৫ম পর্ব</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Cmt_Fifth_semeter' %}">৫ম পর্ব</a></li>
 
-                      <li><a class="dropdown-item" href="{% url 'Cmt_Sixth_semeter' %}">৬ষ্ঠ পর্ব</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Cmt_Sixth_semeter' %}">৬ষ্ঠ পর্ব</a></li>
 
-                      <li><a class="dropdown-item" href="{% url 'Cmt_Seventh_semeter' %}">৭ম পর্ব</a></li>
-                      
-                    </ul>
-                  </div>
-              </div>
-           </div>
+                        <li><a class="dropdown-item" href="{% url 'Cmt_Seventh_semeter' %}">৭ম পর্ব</a></li>
+                        
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="probidhan">
+                    <div class="dropdown">
+                        <button class="btn cart-btn dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            প্রবিধান
+                        </button>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{% url 'Cmt_First_semeter' %}">2016</a></li>
+
+                        <li><a class="dropdown-item" href="{% url 'Cmt_Second_semeter' %}">2022</a></li>
+
+                        
+                        
+                        </ul>
+                    
+                     </div>
+                </div>
+            </div>
         </div>
     </div>
      

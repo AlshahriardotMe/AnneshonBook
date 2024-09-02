@@ -1,0 +1,61 @@
+.icon-hover-primary:hover {
+    border-color: #3b71ca !important;
+    background-color: white !important;
+  }
+  
+  .icon-hover-primary:hover i {
+    color: #3b71ca !important;
+  }
+  .icon-hover-danger:hover {
+    border-color: #dc4c64 !important;
+    background-color: white !important;
+  }
+  
+.close-btn {
+	margin-left: 180px;
+}
+.form-controls {
+	width: 44px;
+	height: 38px;
+}
+.price {
+	margin-left: 56px;
+}
+.card-section {
+	width: 528px;
+}
+.quantity-btn {
+	padding: 5px 3px;
+    background-color:#0d0d72 ;
+    color: white;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .close-btn {
+        margin-left: 568px;
+    }
+   
+}
+@media only screen and (max-width: 767px) {
+    .close-btn {
+        margin-left: 101px;
+    }
+    
+    .price{
+        
+    }
+    
+}
+@media only screen and (max-width: 320px) {
+    .close-btn {
+        margin-left: 38px;
+    }
+    
+    .price {
+        margin-left: 15px;
+    }
+    .quantity-btn {
+        padding: 5px;
+    }
+}
