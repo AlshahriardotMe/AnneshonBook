@@ -414,14 +414,13 @@ textarea.input {
 	text-decoration: none;
 	
 }
-.suggestion-book {
-	/* background-color: #deeffb; */
-  background-image: url('/static/images/bg.png');
-  
-	height: 452px;
-}
+
 .dropdown-menu.p-2.show {
 	width: 229px;
+}
+.card-overflow {
+  margin-top: -153px;
+  margin-left: -25px;
 }
 
 
@@ -581,7 +580,7 @@ textarea.input {
 }
 .dropdown-item:hover{
   background-color: #F83F07;
-  color: #000;
+  color: #fbeeee;
   transition: all .7s ease;
 }
 .product-widget {
@@ -606,10 +605,26 @@ textarea.input {
 .cart-btns{
   background-color: #090761;
 }
-.card-img {
-	height: 313px;
+.card {
+	width: 220px;
 }
-
+.cardContainer {
+	width: 246px !important;
+}
+.card-img {
+	height: 269px;
+	width: 215px;
+	margin: auto;
+	padding: 8px;
+}
+.card-title {
+	margin-bottom: -1px;
+	margin-top: -17px;
+}
+.prices {
+	margin-bottom: 3px;
+	margin-top: -18px;
+}
 .main-nav>li>a:hover:after, .main-nav>li>a:focus:after, .main-nav>li.active>a:after {
   width: 100%;
   text-decoration: none;
@@ -619,16 +634,16 @@ textarea.input {
 .header-ctn li.nav-toggle {
   display: none;
 }
-.all-books {
-	/* background-color: aliceblue; */
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png);
-
-	height: 1374px
+/* .all-books {
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png);
+	height: 1250px;
+} */
+.gif {
+	width: 86px;
+	margin-left: 32px;
 }
-
 .review-book {
-	/* background-color: rgb(247, 237, 231); */
-  background-image: url('/static/images/bookbg.png');
+  /* background-image: url('/static/images/bookbg.png'); */
   
 	height: 576px;
 	border-bottom: 4px solid #F83F07;
@@ -640,7 +655,7 @@ textarea.input {
 .all-book-btn {
 	
   background-color: #F83F07;
-	color: rgb(0, 0, 0);
+	color: white;
 	cursor: pointer;
   transition: 0.6s all ease-in-out 0s;
 }
@@ -650,14 +665,14 @@ textarea.input {
   
 }
 .cart-btn{
-  background-color:#0d0d72 ;
+  background-color:#0d0d72 !important ;
   color: white;
   cursor: pointer;
   transition: 0.6s all ease-in-out 0s;
 }  
 .cart-btn:hover{
   color: #f7f5f5;
-  background-color: #F83F07;
+  background-color: #F83F07 ;
 }
 
 /* .gradient-custom-3 {
@@ -1149,12 +1164,7 @@ textarea.input {
 .product-details .review-link {
   font-size: 12px;
 }
-.card{
-  transition: calc(02);
-}
-.card:hover{
-  transition: transform(02);
-}
+
 
 .product-details .product-price {
   display: inline-block;
@@ -1764,13 +1774,56 @@ textarea.input {
     height: 675px;
   }
   .suggestion-book {
-    margin-top: 2968px;
     height: 543px;
   }
 
 }
+@media only screen and (max-width: 575px) {
+  .section-title .section-nav {
+    float: none;
+    margin-top: 10px;
+  }
+  .section-tab-nav li {
+    margin-top: 10px;
+  }
+  .anneshon-text {
+    color: #5fd25f;
+    margin-top: 20px;
+    font-size: 56px;
+    text-decoration: none;
+  }
+  .w-25.logos {
+    margin-left: 81px;
+  }
+  #navigation {
+    border-top: 3px solid #F83F07;
+    padding: 0px;
+  }
+  .header-ctn {
+    padding: 11px 0px;
+    margin-left: 76px;
+    gap: 50px;
+    
+  }
+  .all-books {
+    height: 1236px;
+  }
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+  .list {
+    color: white;
+  }
+  .suggestion-book {
+    height: 566px;
+  }
+  .review-book {
+    height: 512px;
+  }
 
-@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 320px) {
   [class*='col-xs'] {
     width: 100%;
   }
@@ -1800,33 +1853,25 @@ textarea.input {
     margin-left: 10px;
     gap: 15px;
   }
-  .suggestion-book {
-    margin-top: 2954px;
+  .card{
+    width: 200px;
   }
+  
   .review-book {
-    height: 563px;
+    height: 506px;
   }
   .list {
     color: white;
     margin-left: 14px;
   }
-
+  #navigation {
+    border-top: 3px solid #F83F07;
+    padding: 0px;
+  }
+  .cardContainer {
+    margin-left: 26px;
+    /* width: 246px !important; */
+  }
 
 }
-@media only screen and (max-width: 319px) {
-  [class*='col-xs'] {
-    width: 100%;
-  }
-  .store-grid {
-    float: none;
-    margin-top: 10px;
-  }
-  .store-pagination {
-    float: none;
-    margin-top: 10px;
-  }
-  .header-logo {
-    float: none;
-    text-align: center;
-  }
-}
+

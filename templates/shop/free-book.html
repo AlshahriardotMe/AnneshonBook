@@ -1,89 +1,106 @@
 {% extends "shop/base.html" %}
 {% load static %}
+<title> {% block title %} Free Book {% endblock title %}</title>
 {% block main-contact %}
    
+<div class="container-fluid">
+    <div class="row">
+        <div class="row mt-4 books">
+			<div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+				<div class="card shadow m-auto" style="width: 17rem;">
+					<a href="{% url 'Product_details' %}"> <img class="card-img"  src="{% static 'images/book/book-one.jpg' %}"  alt=<i class="fa-sharp fa-solid fa-image-slash"></i></a>
+					
+					<div class="card-body">
+					  <h5  class="card-title">Bangla-I </h5>
+					  <p class="card-text Sub-code">বিষয় কোড : 61234</p>
+					  <p class="writer-name">Touhid hossen</p>
+					  <p class="regulation">প্রবিধান : 2022</p>
+					  <a href="#" class="btn cart-btn">কার্ডে জমা করুন</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+				<div class="card shadow m-auto" style="width: 17rem;">
+					<img class="card-img" src="{% static 'images/book/book-two.jpg' %}"  alt=<i class="fa-sharp fa-solid fa-image-slash"></i>
+					<div class="card-body">
+					  <h5 class="card-title">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <a href="#" class="btn cart-btn">কার্ডে জমা করুন</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+				<div class="card shadow m-auto" style="width: 17rem;">
+					<img class="card-img" src="{% static 'images/book/book-three.jpg' %}"  alt=<i class="fa-sharp fa-solid fa-image-slash"></i>
+					<div class="card-body">
+					  <h5 class="card-title">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <a href="#" class="btn cart-btn">কার্ডে জমা করুন</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+				<div class="card shadow m-auto" style="width: 17rem;">
+					<img class="card-img" src="{% static 'images/book/book-fore.jpg' %}"  alt=<i class="fa-sharp fa-solid fa-image-slash"></i>
+					<div class="card-body">
+					  <h5 class="card-title">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <a href="#" class="btn cart-btn">কার্ডে জমা করুন</a>
+					</div>
+				</div>
+			</div>
+		
+		
+			<div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+				<div class="card shadow m-auto" style="width: 17rem;">
+					<img class="card-img" src="{% static 'images/book/book-one.jpg' %}"  alt=<i class="fa-sharp fa-solid fa-image-slash"></i>
+					<div class="card-body">
+					  <h5 class="card-title">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <a href="#" class="btn cart-btn">কার্ডে জমা করুন</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+				<div  class="card shadow m-auto" style="width: 17rem;">
+					<img class="card-img" src="{% static 'images/book/book-two.jpg' %}"  alt=<i class="fa-sharp fa-solid fa-image-slash"></i>
+					<div class="card-body">
+					  <h5 class="card-title">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <a href="#" class="btn cart-btn">কার্ডে জমা করুন</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+				<div class="card shadow m-auto" style="width: 17rem;">
+					<img class="card-img" src="{% static 'images/book/book-three.jpg' %}" alt=<i class="fa-sharp fa-solid fa-image-slash"></i>
+					<div class="card-body">
+					  <h5 class="card-title">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <a href="#" class="btn cart-btn">কার্ডে জমা করুন</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+				<div  class="card shadow m-auto" style="width: 17rem;">
+					<img class="card-img" src="{% static 'images/book/book-fore.jpg' %}"  alt=<i class="fa-sharp fa-solid fa-image-slash"></i>
+					<div class="card-body">
+					  <h5 class="card-title">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <a href="#" class="btn cart-btn">কার্ডে জমা করুন</a>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
 
+
+</div>
     
   
 
 
-<main>
-  <div class="position-relative  p-3 text-center free-book">
-    <div class="col-md-5 p-lg-5 mx-auto my-5">
-      <h1 class="display-4 fw-normal"> ফ্রী বই</h1>
-      
-    </div>
-    
-  </div>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
-</main>
 
 
 

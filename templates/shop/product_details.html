@@ -1,5 +1,6 @@
 {% extends "shop/base.html" %}
 {% load static %}
+<title>অন্বেষণ | {% block title %} পণ্য {% endblock title %}</title>
 {% block main-contact %}
 
 
@@ -7,15 +8,22 @@
 
 	
 	<div class="container">
-		<div class="card">
+		<div class="carder">
 			<div class="container-fliud">
 				<div class="wrapper row">
 					<div class="preview col-md-4">
-						
-						<div class="preview-pic tab-content">
-						  <div class="tab-pane active p-4" id="pic-1"><img  src="{% static 'images/book/book-one.jpg' %}" /></div>
-						  
-						</div>
+						<article>
+						<figure class="rounded overflow-hidden mb-3 bsb-overlay-hover">
+							<div class="preview-pic tab-content">
+								<div class="tab-pane active p-4" id="pic-1"><img  src="{% static 'images/book/book-one.jpg' %}" /></div>
+								
+							</div>
+
+							<figcaption>
+								<i class="bi bi-bag"></i>
+								<h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Buy Now</h4>
+							</figcaption>
+						</figure>
 						
 						
 					</div>
@@ -37,7 +45,7 @@
 						
 						
 						<div class="action">
-							<button class="add-to-cart btn btn-default" type="button">add to cart</button>
+							<button class="add-to-cart btn btn-default" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
 							<a href="{% url 'AddToCart' %}"><button  class="add-to-cart btn btn-default" type="button">Buy Now</button></a>
 							
 							<button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
@@ -50,7 +58,7 @@
 
 		<div class="row">
 			<div class="col-12 col-lg-12 col-xl-12">
-				<div class="card widget-card border-light shadow-sm">
+				<div class="cardser widget-card border-light shadow-sm">
 				  <div class="card-body p-4">
 					<ul class="nav nav-tabs" id="profileTab" role="tablist">
 					  <li class="nav-item" role="presentation">
